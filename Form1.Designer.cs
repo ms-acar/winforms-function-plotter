@@ -84,15 +84,18 @@
             textBox17 = new TextBox();
             button7 = new Button();
             button8 = new Button();
+            listBox1 = new ListBox();
+            button9 = new Button();
+            label23 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // formsPlot1
             // 
             formsPlot1.DisplayScale = 1.5F;
-            formsPlot1.Location = new Point(482, -3);
+            formsPlot1.Location = new Point(506, 2);
             formsPlot1.Name = "formsPlot1";
-            formsPlot1.Size = new Size(501, 647);
+            formsPlot1.Size = new Size(513, 705);
             formsPlot1.TabIndex = 0;
             // 
             // textBox1
@@ -121,9 +124,9 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Location = new Point(-39, -7);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(340, 152);
+            pictureBox1.Size = new Size(283, 152);
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
@@ -422,7 +425,7 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
-            label17.Location = new Point(32, 719);
+            label17.Location = new Point(32, 755);
             label17.Name = "label17";
             label17.Size = new Size(736, 25);
             label17.TabIndex = 39;
@@ -585,11 +588,44 @@
             button8.UseVisualStyleBackColor = true;
             button8.Click += button8_Click;
             // 
+            // listBox1
+            // 
+            listBox1.Font = new Font("Times New Roman", 11F, FontStyle.Italic);
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 25;
+            listBox1.Location = new Point(308, 49);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(192, 154);
+            listBox1.TabIndex = 58;
+            // 
+            // button9
+            // 
+            button9.Location = new Point(358, 218);
+            button9.Name = "button9";
+            button9.Size = new Size(142, 34);
+            button9.TabIndex = 59;
+            button9.Text = "Geçmişi temizle";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            label23.Location = new Point(301, 9);
+            label23.Name = "label23";
+            label23.Size = new Size(133, 25);
+            label23.TabIndex = 60;
+            label23.Text = "İşlem geçmişi :";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(988, 832);
+            ClientSize = new Size(1018, 832);
+            Controls.Add(label23);
+            Controls.Add(button9);
+            Controls.Add(listBox1);
             Controls.Add(button8);
             Controls.Add(button7);
             Controls.Add(textBox17);
@@ -713,5 +749,8 @@
         private TextBox textBox17;
         private Button button7;
         private Button button8;
+        private ListBox listBox1;
+        private Button button9;
+        private Label label23;
     }
 }
